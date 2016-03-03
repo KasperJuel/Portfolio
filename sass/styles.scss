@@ -1,7 +1,6 @@
-body {
-	background: yellow;
-}
+@import "variables";
+@import "base";
+@import "fonts";
 
-h1 {
-	font-size: 3.5em;
-}
+// sections
+@import "sections/banner";

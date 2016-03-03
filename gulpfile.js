@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
     return sass('sass/styles.scss', {
       sourcemap: true,
-      style: 'compressed' // ændre til compressed
+      style: 'compressed'
     })
     .on('error', function (err) {
         console.error('Error!', err.message);
