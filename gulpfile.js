@@ -18,17 +18,6 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-// Image compress
-gulp.task('imgmin', function() {
-    return gulp.src('images/*')
-        .pipe(imagemin({
-            progressive: true,
-            interlaced: true,
-            svgoPlugins: [{cleanupIDs: false}]
-        }))
-        .pipe(gulp.dest('dist/compressed'));
-});
-
 // Watch
 gulp.task('watch', function() {
   gulp.watch(['sass/**/*'], ['sass']);
@@ -43,6 +32,6 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('default', 
-    ['sass', 'imgmin', 'watch', 'webserver']
+    ['sass', 'watch', 'webserver']
 );
 
