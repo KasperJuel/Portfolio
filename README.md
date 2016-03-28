@@ -1,3 +1,4 @@
 #Portfolio
 
-Just fiddling about with my new Portfolio. Nothing to see here.
+Under udvikling, så se venligst bort fra alle mangler og fejl der nu må være.
+
