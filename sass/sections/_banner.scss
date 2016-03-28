@@ -1,9 +1,55 @@
+// ----------- Section Banner ----------- //
+#bg_overlay {
+	background-color: rgba($dark_blue, .95);
+}
+
 #banner {
-	.title {
-		font-family: $title;
-		font-size: 6em;
+	background-image: url(../images/bannerbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	header {
+		padding: 2rem 0;
 	}
-	.sub-title {
-		font-family: $title;
+	.socialmedia_icons {
+		color: $white;
+		float: left;
+		a {
+			text-decoration: none;
+			color: $white;
+			margin-left: 1.25rem;
+			i {
+				font-size: 1.5rem;
+			}			
+			i:first-child {
+				margin-left: 0;
+			}
+		}
+		
+	}
+	nav {
+		float: right;
+		a {
+			text-decoration: none;
+			color: $white;
+			margin-left: 2rem;
+			font-size: 1.25rem;
+		}
+	}
+	.content {
+		padding: 12rem 0 12rem 0;
+		.title, .sub_title {
+			font-family: $title_font;
+			color: $white;
+			text-align: center;
+		}
+		.title {
+			font-size: 5.5rem;
+			margin-bottom: .5rem;
+		}
+		.sub_title {
+			font-size: 1.5rem;
+			margin: 0 auto;
+		}
 	}
 }
+

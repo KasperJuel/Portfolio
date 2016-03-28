@@ -1,0 +1,25 @@
+#contact {
+	background: $dark_blue;
+	text-align: center;
+	h2, h5, i  {
+		color: $white;
+	}
+	h5 {
+		font-size: 3.75em;
+		font-weight: 100;
+		font-family: $main_font;
+		padding-top: 1em;
+		a {
+			text-decoration: none;
+			color: $white;
+		}
+	}
+	.socialmedia_icons {
+		font-size: 2.2em;
+		padding-bottom: 2em;
+		i {
+			margin-left: .45em;
+			padding: 1.2em 0;
+		}
+	}
+}

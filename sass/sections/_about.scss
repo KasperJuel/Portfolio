@@ -1,0 +1,29 @@
+#about {
+	background: $light_grey;
+	.profile_pic {
+		background: url(../images/kasper.jpg) no-repeat;
+		background-position: 50%;
+		background-size: cover;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		margin: 4em auto 0 auto;
+	}
+	h2 {
+		color: $dark_grey;
+	}	
+	p {
+		color: $dark_grey;		
+		line-height: 1.5em;
+		text-align: center;
+	}
+	#greet {
+		font-weight: 700;
+		font-size: 1.25em;
+		padding-top: 2em;
+	}
+	#summary {
+		padding-bottom: 6em;
+	}
+}
+

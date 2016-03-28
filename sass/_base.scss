@@ -1,11 +1,11 @@
 // ----------- Global Styles ----------- //
-
 * {
-	border-box: box-sizing;
+	box-sizing: border-box;
 }
 
 body {
-	background-color: yellow;
+	font-family: $main_font;
+	font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,8 +13,21 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
 
-.clearfix:after,
-.clearfix:before {
+h2 {
+	font-family: $title_font;
+	font-size: 3.75rem;
+	text-align: center;
+	padding: 6rem 0 0 0;
+}
+
+.container {
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
 	content: " ";
 	display: table;
 }
@@ -22,3 +35,4 @@ h1, h2, h3, h4, h5, h6 {
 .clearfix:after {
 	clear: both;
 }
+

@@ -1,0 +1,52 @@
+// ----------- Section Skills ----------- //
+#skills {
+	background-color: $dark_blue;
+	h2 {
+		color: $white;
+	}
+	.skill_col {
+		width: 31%;
+		float: left;
+		text-align: center;
+		padding: 6rem 2.5%;
+	}
+	i {
+		font-size: 3.15rem;
+		color: $light_blue;
+		margin: 0 auto;
+		line-height: 1.25rem;
+		text-align: center;
+	}
+	h4 {
+		color: $light_blue;
+		font-size: 1.15rem;
+		margin-top: .75rem;
+	}
+	.skill {
+		p {
+			color: $white;
+			margin-bottom: .25rem;
+		}
+		.rating_icons {
+			font-size: 0; // fix af mellemrum på span ved linje skift, pga inline-block
+			display: block;
+			span {
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				border: 2px solid $light_grey;
+				background: $light_grey;
+				border-radius: 50%;
+				margin-right: 3px;
+			}
+			@for $i from 1 through 10 {
+				&.rating-#{$i} span:nth-child(n+#{$i}) {
+					background: $dark_blue;
+				}
+			}
+		}
+	}
+}
+
+
+
