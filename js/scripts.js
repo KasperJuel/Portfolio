@@ -3,9 +3,8 @@ $(window).scroll(function() {
 	var scrollDown = $(this).scrollTop();
 	var titleAndSubTitle = $('.title,.sub_title');
 
-
-	$(titleAndSubTitle).css({
-		'transform' : 'translate(0,' + scrollDown / 34 + '%)'
+	$('#scroll').css({
+		'transform' : 'translate(0px,' + scrollDown / 4 + '%)'
 	});
 
 	$(titleAndSubTitle).css(
