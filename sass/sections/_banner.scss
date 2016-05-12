@@ -6,7 +6,9 @@
 #banner {
 	background-image: url(../images/bannerbg.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto 1400px;
+	background-attachment: fixed;
+	background-position: top center;
 	header {
 		padding: 2rem 0;
 	}
@@ -39,7 +41,7 @@
 		}
 	}
 	.content {
-		padding: 12rem 0 12rem 0;
+		padding: 18rem 0 18rem 0;
 		.title, .sub_title {
 			font-family: $title_font;
 			color: $white;
@@ -52,6 +54,9 @@
 		.sub_title {
 			font-size: 1.5rem;
 			margin: 0 auto;
+		}
+		.fade {
+			transition: opacity 1s ease-in-out;
 		}
 	}
 }
